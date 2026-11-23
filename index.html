@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LV Studio | Visualización Arquitectónica, Modelado 3D & Taller Tommy</title>
+  <meta name="description" content="LV Studio — Estudio de visualización arquitectónica, modelado BIM 3D y diseño de mobiliario a medida con la división Taller Tommy. Espacios que cobran vida antes de construirse.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts: Tinos (Serif) & Plus Jakarta Sans (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Studio Availability Bar (Subtle Architectural Editorial Accent) -->
+  <div style="background-color: #000000; color: #f9f0e0; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; padding: 0.45rem var(--page-pad); display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <div style="display: flex; align-items: center; gap: 0.6rem;">
+      <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background-color: #71805f;"></span>
+    </div>
+    <div style="display: flex; gap: 1.5rem; align-items: center;">
+      <span>PUEBLA, MÉXICO</span>
+      <a href="https://wa.me/522228167858" target="_blank" rel="noopener noreferrer" style="color: #f9f0e0; text-decoration: none; opacity: 0.85; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">WA: +52 222 816 7858</a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <!-- Left: LV Studio Brand Logo -->
+      <a href="#top" class="brand-link" aria-label="LV Studio — Inicio">
+        <img src="LV STUDIO.png" alt="LV Studio" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">LV STUDIO</span>
+          <span class="brand-subtitle">DISEÑO - VISUALIZACIÓN - ESPACIOS</span>
+        </div>
+      </a>
+
+      <!-- Center: Clean Minimalist Nav Links -->
+      <nav class="nav-menu" aria-label="Navegación principal">
+        <a href="#hero" class="nav-link active">Inicio</a>
+        <a href="#enfoque" class="nav-link">Enfoque</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#taller-tommy" class="nav-link">
+          Taller Tommy<span class="nav-badge-sage" title="División Mobiliario"></span>
+        </a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#cotizador" class="nav-link">Cotizador</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Right: Black CTA Button -->
+      <div class="header-actions">
+        <a href="https://wa.me/522228167858?text=Hola%20LV%20Studio%2C%20quisiera%20iniciar%20un%20proyecto%20de%20visualizaci%C3%B3n%20arquitect%C3%B3nica." target="_blank" rel="noopener noreferrer" class="btn-primary header-cta">
+          Iniciar Proyecto <span class="arrow">→</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" aria-label="Abrir menú de navegación" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" aria-hidden="true">
+    <nav class="mobile-nav-list">
+      <a href="#hero" class="mobile-nav-link"><span>Inicio</span> <span>→</span></a>
+      <a href="#enfoque" class="mobile-nav-link"><span>Nuestro Enfoque</span> <span>→</span></a>
+      <a href="#proyectos" class="mobile-nav-link"><span>Galería de Proyectos</span> <span>→</span></a>
+      <a href="#taller-tommy" class="mobile-nav-link"><span>Taller Tommy (Mobiliario)</span> <span>→</span></a>
+      <a href="#servicios" class="mobile-nav-link"><span>Servicios & Herramientas</span> <span>→</span></a>
+      <a href="#cotizador" class="mobile-nav-link"><span>Cotizador Instantáneo</span> <span>→</span></a>
+      <a href="#contacto" class="mobile-nav-link"><span>Contacto Directo</span> <span>→</span></a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="https://wa.me/522228167858" target="_blank" rel="noopener noreferrer" class="btn-primary" style="width: 100%;">
+        Iniciar Proyecto por WhatsApp →
+      </a>
+      <div style="font-size: 0.75rem; color: var(--color-charcoal); display: flex; justify-content: space-between; margin-top: 0.5rem;">
+        <span>lvstudioarq7@gmail.com</span>
+        <span>@lv_studio_7</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section (Composition matched strictly to Reference Image 1)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container-flush">
+        <div class="hero-grid">
+          <!-- Left Column: Editorial Headline & Actions -->
+          <div class="hero-content">
+            <span class="micro-label">VISUALIZACIÓN ARQUITECTÓNICA & MODELADO 3D</span>
+            <h1 class="hero-headline editorial-title">
+              ESPACIOS QUE COBRAN VIDA ANTES DE CONSTRUIRSE.
+            </h1>
+            <div class="hero-divider"></div>
+            <p class="hero-description">
+              Transformamos planos e ideas en experiencias visuales fotorrealistas, arquitectura interior y mobiliario a medida con la división Taller Tommy.
+            </p>
+            <div class="hero-actions">
+              <a href="#proyectos" class="btn-primary">
+                Ver Portafolio <span class="arrow">→</span>
+              </a>
+              <a href="#taller-tommy" class="btn-link">
+                Conocer Taller Tommy →
+              </a>
+            </div>
+
+            <!-- Studio Metadata Row -->
+            <div class="hero-meta-row">
+              <div class="hero-meta-item">
+                <span class="hero-meta-number">100%</span>
+                <span class="hero-meta-label">Fidelidad Geométrica & BIM</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-number">Full HD</span>
+                <span class="hero-meta-label">Resolución Web & Gran Formato</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-number">Física + Digital</span>
+                <span class="hero-meta-label">Manufactura en Taller Tommy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Split Overlay Architectural Visual Showcase -->
+          <div class="hero-visual-wrapper">
+            <img src="LV STUDIO.png" alt="LV Studio" class="hero-visual-img" fetchpriority="high">
+            <div class="hero-visual-overlay"></div>
+            <div class="hero-badge-overlay">
+              <div class="hero-badge-dot"></div>
+              <div>
+                <div class="hero-badge-title">Tus sueños nuestro trabajo</div>
+                <div class="hero-badge-sub">Renderizado Fotorrealistar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 2: Nuestro Enfoque & Especialidades (3-Column Grid matching Image 1)
+         ========================================================================== -->
+    <section class="approach-section" id="enfoque">
+      <div class="container-flush">
+        <div class="approach-grid">
+          <!-- Left Column: Studio Approach Statement -->
+          <div class="approach-left">
+            <div>
+              <span class="micro-label">NUESTRO ENFOQUE</span>
+              <h2 class="approach-title editorial-title">
+                Precisión.<br>Atmósfera.<br>Realismo.
+              </h2>
+              <div class="hero-divider" style="margin-bottom: 1.5rem;"></div>
+              <p class="approach-desc">
+                Abordamos cada encargo desde el rigor geométrico del modelo tridimensional hasta la emoción lumínica de la escena, garantizando que inversionistas, desarrolladores y clientes vivan la experiencia antes del primer colado.
+              </p>
+            </div>
+            <div class="approach-tags">
+              <span class="approach-tag">3ds Max & Blender</span>
+              <span class="approach-tag">BIM Revit</span>
+              <span class="approach-tag">3ds Max</span>
+              <span class="approach-tag">Blender</span>
+              <span class="approach-tag">SketchUp Pro</span>
+            </div>
+          </div>
+
+          <!-- Right 3 Columns: 01, 02, 03 with Architectural Thumbnails & Arrows -->
+          <div class="approach-right">
+            <!-- 01 Renderizado Fotorrealista -->
+            <a href="#proyectos" class="approach-card" data-project-trigger="residencia-la-canada">
+              <div class="approach-thumb-wrap">
+                <img src="render habitacion.jpeg" alt="Renderizado Fotorrealista de arquitectura" class="approach-thumb" loading="lazy">
+              </div>
+              <div class="approach-card-meta">
+                <span class="approach-card-num">01</span>
+                <span class="approach-card-arrow">→</span>
+              </div>
+              <h3 class="approach-card-title">Renderizado Fotorrealista</h3>
+              <p class="approach-card-sub">Iluminación física, texturas PBR y atmósferas cinematográficas.</p>
+            </a>
+
+            <!-- 02 Modelado Arquitectónico 3D -->
+            <a href="#proyectos" class="approach-card" data-project-trigger="pabellon-cultural-lumina">
+              <div class="approach-thumb-wrap">
+                <img src="revit.png" alt="Modelado Arquitectónico 3D y BIM" class="approach-thumb" loading="lazy">
+              </div>
+              <div class="approach-card-meta">
+                <span class="approach-card-num">02</span>
+                <span class="approach-card-arrow">→</span>
+              </div>
+              <h3 class="approach-card-title">Modelado Arquitectónico 3D</h3>
+              <p class="approach-card-sub">BIM paramétrico, coordinación geométrica y precisión milimétrica.</p>
+            </a>
+
+            <!-- 03 Diseño de Interiores & Mobiliario -->
+            <a href="#taller-tommy" class="approach-card">
+              <div class="approach-thumb-wrap">
+                <img src="cocina.png" alt="Diseño de Interiores y Mobiliario" class="approach-thumb" loading="lazy">
+              </div>
+              <div class="approach-card-meta">
+                <span class="approach-card-num">03</span>
+                <span class="approach-card-arrow">→</span>
+              </div>
+              <h3 class="approach-card-title">Interiores & Mobiliario</h3>
+              <p class="approach-card-sub">Conceptualización espacial y manufactura física con Taller Tommy.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3: Interactive Project Carousel ("Galería de Proyectos")
+         Upgraded Multi-Card Carousel with Category Filters & Editorial Companion
+         ========================================================================== -->
+    <section class="projects-section" id="proyectos">
+      <div class="container">
+        <!-- Section Header with Heading, Subtitle & Arrow Controls -->
+        <div class="projects-header-flex">
+          <div>
+            <span class="micro-label">GALERÍA DE PROYECTOS SELECCIONADOS</span>
+            <h2 class="projects-heading editorial-title">Obras & Visualizaciones 3D</h2>
+            <p class="projects-subheading">Explora nuestro portafolio de renderizado fotorrealista, modelos BIM y mobiliario arquitectónico a medida.</p>
+          </div>
+          <div class="projects-controls-top">
+            <div class="carousel-counter-badge">
+              <span class="carousel-counter-current">01</span> / <span class="carousel-counter-total">05</span>
+            </div>
+            <div class="carousel-nav-arrows">
+              <button type="button" class="carousel-arrow-btn carousel-prev-btn" aria-label="Proyecto anterior">←</button>
+              <button type="button" class="carousel-arrow-btn carousel-next-btn" aria-label="Siguiente proyecto">→</button>
+            </div>
+          </div>
+        </div>
+
+      <!-- LV Studio - Render Carousel -->
+<div class="project-filter-tabs">
+
+    <div class="render-carousel">
+
+        <button class="render-arrow render-prev"
+                type="button"
+                aria-label="Imagen anterior">
+            &#8592;
+        </button>
+
+        <div class="render-carousel-window">
+            <div class="render-carousel-track">
+
+                <div class="render-slide">
+                    <img src="cocina.png"
+                         alt="Render arquitectónico 1">
+                </div>
+
+                <div class="render-slide">
+                    <img src="render habitacion.jpeg"
+                         alt="Render arquitectónico 2">
+                </div>
+
+                <div class="render-slide">
+                    <img src="render retro.png"
+                         alt="Render arquitectónico 3">
+                </div>
+
+                <div class="render-slide">
+                    <img src="3dsmax.png"
+                         alt="Render arquitectónico 4">
+                </div>
+
+                <div class="render-slide">
+                    <img src="blenders.png"
+                         alt="Render arquitectónico 5">
+                </div>
+
+            </div>
+        </div>
+
+        <button class="render-arrow render-next"
+                type="button"
+                aria-label="Imagen siguiente">
+            &#8594;
+        </button>
+
+    </div>
+
+    <div class="render-indicators">
+        <span class="render-current">01</span>
+        <span class="render-separator">/</span>
+        <span>05</span>
+    </div>
+
+</div>
+
+
+
+        
+
+    <!-- ==========================================================================
+         Section 4: Dedicated Division — "Taller Tommy" (Furniture Design & Manufacturing)
+         Distinct editorial feature block utilizing the #71805f (Sage Green) palette
+         ========================================================================== -->
+    <section class="tommy-section" id="taller-tommy">
+      <div class="container-flush">
+        <!-- Division Editorial Header -->
+        <div class="tommy-header-row">
+          <div class="tommy-brand-wrap">
+            <span class="micro-label micro-label-dark">DIVISIÓN ESPECIALIZADA DE MOBILIARIO</span>
+            <!-- Taller Tommy Logo on Sage Green -->
+            <img src="taller tommy.png" alt="Taller Tommy — Diseño · Fabricación · Mobiliario" class="tommy-logo-display">
+            <span class="tommy-subtitle-tag">DISEÑO · FABRICACIÓN · MOBILIARIO A MEDIDA</span>
+          </div>
+          <div>
+            <p class="tommy-header-desc">
+              En LV Studio cerramos la brecha entre la visualización digital y la realidad material. A través de <strong>Taller Tommy</strong>, diseñamos, modelamos en 3D y fabricamos piezas exclusivas de carpintería arquitectónica y herrería fina para proyectos residenciales y comerciales.
+            </p>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://wa.me/522228167858?text=Hola%20Taller%20Tommy%2C%20quisiera%20cotizar%20fabricaci%C3%B3n%20de%20mobiliario%20a%20medida." target="_blank" rel="noopener noreferrer" class="btn-sage">
+                Cotizar Mobiliario en Taller Tommy <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Furniture Grid Showcase -->
+        <div class="tommy-grid">
+          <!-- Card 1: Mesa Comedor Nogal & Acero -->
+          <div class="tommy-feature-card">
+            <div class="tommy-card-img-wrap">
+              <img src="assets/images/taller_tommy_furniture_hero.jpg" alt="Mesa de comedor y credenza en roble y acero por Taller Tommy" class="tommy-card-img" loading="lazy">
+            </div>
+            <div class="tommy-card-body">
+              <span class="tommy-card-category">Línea Residencial · Pieza de Autor</span>
+              <h3 class="tommy-card-title">Coffe Station</h3>
+              <p class="tommy-card-desc">Cubierta en madera barnizada, sostenida por pedestales metalicos en acabado negro con un espacio en medio de almacenamiento.</p>
+              <div class="tommy-materials-row">
+                <span class="tommy-mat-pill">Madera de Pino</span>
+                <span class="tommy-mat-pill">Acero al Carbón</span>
+      
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Credenza Brutalista en Roble -->
+          <div class="tommy-feature-card">
+            <div class="tommy-card-img-wrap">
+              <img src="assets/images/furniture_credenza_detail.jpg" alt="Credenza escultural en roble y herrajes ocultos por Taller Tommy" class="tommy-card-img" loading="lazy">
+            </div>
+            <div class="tommy-card-body">
+              <span class="tommy-card-category">Almacenamiento Arquitectónico</span>
+              <h3 class="tommy-card-title">Reja de Jardín</h3>
+              <p class="tommy-card-desc">Reja metalica con ornamentos perfecta para dividir espacios pero sin perder estetica</p>
+              <div class="tommy-materials-row">
+                <span class="tommy-mat-pill">Jardín</span>
+                <span class="tommy-mat-pill">Herrería</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Carpintería Integral & Cocinas -->
+          <div class="tommy-feature-card">
+            <div class="tommy-card-img-wrap">
+              <img src="assets/images/furniture_table_detail.jpg" alt="Detalle de ensambles artesanales y acabados Taller Tommy" class="tommy-card-img" loading="lazy">
+            </div>
+            <div class="tommy-card-body">
+              <span class="tommy-card-category">Manufactura de Alta Precisión</span>
+              <h3 class="tommy-card-title">Zagúan</h3>
+              <p class="tommy-card-desc">Dale vida a tu fachada con un zagúan hecho de herrería bajo costo y máxima seguridad.</p>
+              <div class="tommy-materials-row">
+                <span class="tommy-mat-pill">Ensamble metalicos</span>
+                <span class="tommy-mat-pill">Acabado a tu agrado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taller Tommy Specs / Craftsmanship Footer Row -->
+        <div class="tommy-footer-row">
+          <div class="tommy-spec-item">
+            <span class="tommy-spec-title">01 · De Render a Taller</span>
+            <p class="tommy-spec-desc">Modelamos tu mueble en 3D para aprobación milimétrica antes de cortar la primera tabla.</p>
+          </div>
+          <div class="tommy-spec-item">
+            <span class="tommy-spec-title">02 · Maderas Certificadas</span>
+            <p class="tommy-spec-desc">Nogal, Roble Blanco, Tzalam, Parota y Fresno con humedad controlada al 8%.</p>
+          </div>
+          <div class="tommy-spec-item">
+            <span class="tommy-spec-title">03 · Herrería Arquitectónica</span>
+            <p class="tommy-spec-desc">Estructuras en acero, corte láser y pintura electrostática horneada.</p>
+          </div>
+          <div class="tommy-cta-box">
+            <a href="https://wa.me/522228167858?text=Hola%2C%20quisiera%20solicitar%20el%20cat%C3%A1logo%20de%20materiales%20de%20Taller%20Tommy." target="_blank" rel="noopener noreferrer" class="btn-primary" style="background-color: #000000; color: #f9f0e0; border-color: #000000;">
+              Solicitar Catálogo →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 5: Servicios & Stack Tecnológico (2x2 Grid matching Image 1)
+         ========================================================================== -->
+    <section class="services-section" id="servicios">
+      <div class="container-flush">
+        <div class="services-grid">
+          <!-- Left Column: Services Header & Tech Stack Bar -->
+          <div class="services-left">
+            <div>
+              <span class="micro-label">SERVICIOS & HERRAMIENTAS</span>
+              <h2 class="services-title editorial-title">
+                Del concepto digital a la realidad física.
+              </h2>
+              <div class="hero-divider" style="margin-bottom: 1.5rem;"></div>
+              <p class="services-intro">
+                Ofrecemos una gama integral de soluciones para arquitectos, desarrolladores inmobiliarios e interioristas, integrando los estándares tecnológicos más rigurosos de la industria.
+              </p>
+            </div>
+
+            <!-- Tech Stack Software Bar (SketchUp, Blender, 3ds Max, Revit) -->
+            <div class="tech-stack-box">
+              <span class="tech-stack-label">Stack Tecnológico & Motores de Render</span>
+              <div class="tech-stack-grid">
+                <!-- 3ds Max -->
+                <div class="tech-badge active" data-tech="max">
+                  <svg class="tech-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                  <span class="tech-badge-text">3ds Max</span>
+                </div>
+
+                <!-- Revit -->
+                <div class="tech-badge" data-tech="revit">
+                  <svg class="tech-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                  <span class="tech-badge-text">Autodesk Revit</span>
+                </div>
+
+                <!-- Blender -->
+                <div class="tech-badge" data-tech="blender">
+                  <svg class="tech-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                    <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                  </svg>
+                  <span class="tech-badge-text">Blender</span>
+                </div>
+
+                <!-- SketchUp -->
+                <div class="tech-badge" data-tech="sketchup">
+                  <svg class="tech-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  </svg>
+                  <span class="tech-badge-text">SketchUp Pro</span>
+                </div>
+              </div>
+
+              <!-- Interactive Tech Description Box -->
+              <div class="tech-desc-box">
+                <strong>Autodesk 3ds Max</strong> — <em>Motor Principal de Renderizado Fotorrealista</em>: El corazón de nuestro pipeline de alta fidelidad: shaders físicamente correctos, iluminación precisa, materiales de alta fidelidad y post-producción fotográfica.
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 2x2 Services Grid (Matching Image 1 Minimalist Geometric Line Icons) -->
+          <div class="services-right-2x2">
+            <!-- 1. Modelado 3D & BIM -->
+            <div class="service-card">
+              <div class="service-card-top">
+                <!-- Geometric Icon matching Image 1 top-left -->
+                <svg class="service-icon-svg" viewBox="0 0 48 48">
+                  <rect x="8" y="8" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none"></rect>
+                  <line x1="8" y1="40" x2="40" y2="8" stroke="currentColor" stroke-width="1.5"></line>
+                  <line x1="8" y1="24" x2="24" y2="8" stroke="currentColor" stroke-width="1"></line>
+                </svg>
+                <span class="service-arrow">→</span>
+              </div>
+              <div>
+                <h3 class="service-title">Modelado 3D & BIM</h3>
+                <p class="service-desc">
+                  Modelado geométrico paramétrico en Revit y SketchUp. Levantamiento desde planos CAD 2D, coordinación de ingenierías y preparación de modelos para cuantificación y construcción.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2. Renderizado & Animación -->
+            <div class="service-card">
+              <div class="service-card-top">
+                <!-- Minimalist Triple Rings Icon matching Image 1 top-right -->
+                <svg class="service-icon-svg" viewBox="0 0 48 48">
+                  <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+                  <circle cx="28" cy="20" r="12" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+                  <circle cx="24" cy="28" r="12" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+                </svg>
+                <span class="service-arrow">→</span>
+              </div>
+              <div>
+                <h3 class="service-title">Renderizado & Animación</h3>
+                <p class="service-desc">
+                  Pipeline de iluminación avanzada en 3ds Max y Blender. Recorridos cinemáticos virtuales, animación de asoleamiento y post-producción fotográfica.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3. Visualización Arquitectónica -->
+            <div class="service-card">
+              <div class="service-card-top">
+                <!-- Triangle Perspective Icon matching Image 1 bottom-left -->
+                <svg class="service-icon-svg" viewBox="0 0 48 48">
+                  <polygon points="24,6 42,42 6,42" stroke="currentColor" stroke-width="1.5" fill="none"></polygon>
+                  <line x1="24" y1="6" x2="24" y2="42" stroke="currentColor" stroke-width="1.2"></line>
+                </svg>
+                <span class="service-arrow">→</span>
+              </div>
+              <div>
+                <h3 class="service-title">Visualización Arquitectónica</h3>
+                <p class="service-desc">
+                  Composiciones fotorrealistas de exteriores e interiores para marketing inmobiliario, catálogos de preventa, concursos de arquitectura y presentaciones ejecutivas de alto impacto.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4. Taller Tommy: Mobiliario -->
+            <div class="service-card">
+              <div class="service-card-top">
+                <!-- Isometric Cube / Joinery Icon matching Image 1 bottom-right -->
+                <svg class="service-icon-svg" viewBox="0 0 48 48">
+                  <polygon points="24,4 42,14 24,24 6,14" stroke="currentColor" stroke-width="1.5" fill="none"></polygon>
+                  <polygon points="6,14 24,24 24,44 6,34" stroke="currentColor" stroke-width="1.5" fill="none"></polygon>
+                  <polygon points="42,14 24,24 24,44 42,34" stroke="currentColor" stroke-width="1.5" fill="none"></polygon>
+                </svg>
+                <span class="service-arrow">→</span>
+              </div>
+              <div>
+                <h3 class="service-title">Taller Tommy: Mobiliario</h3>
+                <p class="service-desc">
+                  Diseño paramétrico y fabricación real de mobiliario a medida. Carpintería fina en maderas estufadas, corte digital CNC, herrería arquitectónica y acabados premium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 6: Interactive Architectural Quote Estimator & WhatsApp Builder
+         ========================================================================== -->
+    <section class="estimator-section" id="cotizador">
+      <div class="container">
+        <div class="estimator-header">
+          <span class="micro-label">ESTIMADOR INTERACTIVO</span>
+          <h2 class="estimator-title editorial-title">Inicia tu cotización en segundos.</h2>
+          <p class="estimator-subtitle">
+            Selecciona el alcance de tu proyecto y recibe una estimación de tiempo inmediata junto con un mensaje directo pre-configurado para nuestro equipo.
+          </p>
+        </div>
+
+        <div class="estimator-card">
+          <!-- Step 1: Servicio -->
+          <div class="estimator-step">
+            <div class="estimator-step-title">
+              <span class="estimator-step-num">1</span>
+              <span>Tipo de Servicio Requerido</span>
+            </div>
+            <div class="chips-group" data-group="service">
+              <button type="button" class="chip-btn selected">Renderizado Fotorrealista (Exteriores & Interiores)</button>
+              <button type="button" class="chip-btn">Modelado 3D & BIM (Revit / SketchUp)</button>
+              <button type="button" class="chip-btn sage-chip">Taller Tommy: Fabricación de Mobiliario</button>
+              <button type="button" class="chip-btn">Paquete Completo (BIM + Renders + Mobiliario)</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Tipología de Proyecto -->
+          <div class="estimator-step">
+            <div class="estimator-step-title">
+              <span class="estimator-step-num">2</span>
+              <span>Tipología del Proyecto</span>
+            </div>
+            <div class="chips-group" data-group="type">
+              <button type="button" class="chip-btn selected">Residencial / Vivienda Unifamiliar</button>
+              <button type="button" class="chip-btn">Desarrollo Inmobiliario / Multifamiliar</button>
+              <button type="button" class="chip-btn">Comercial / Restaurante / Tienda</button>
+              <button type="button" class="chip-btn">Corporativo / Cultural</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Alcance / Vistas -->
+          <div class="estimator-step">
+            <div class="estimator-step-title">
+              <span class="estimator-step-num">3</span>
+              <span>Número de Vistas / Entregables</span>
+            </div>
+            <div class="chips-group" data-group="views">
+              <button type="button" class="chip-btn">1 a 3 Vistas Rápidas</button>
+              <button type="button" class="chip-btn selected">4 a 6 Vistas Fotorrealistas</button>
+              <button type="button" class="chip-btn">7 a 10+ Vistas / Masterplan</button>
+              <button type="button" class="chip-btn">Recorrido Virtual / Animación</button>
+            </div>
+          </div>
+
+          <!-- Summary & WhatsApp Action -->
+          <div class="estimator-summary-box">
+            <div class="summary-meta-item">
+              <span class="summary-label">Tiempo Estimado de Entrega</span>
+              <span class="summary-val summary-turnaround-val">5 a 7 Días Hábiles</span>
+            </div>
+            <div class="summary-meta-item">
+              <span class="summary-label">Atención Inmediata</span>
+              <span class="summary-val" style="font-size: 1.05rem;">Respuesta en &lt; 2 Horas</span>
+            </div>
+            <div>
+              <a href="https://wa.me/522228167858" target="_blank" rel="noopener noreferrer" class="btn-primary estimator-send-wa">
+                Enviar Solicitud a WhatsApp <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer & Direct Contact Channels
+       ========================================================================== -->
+  <footer class="site-footer" id="contacto">
+    <div class="footer-top">
+      <div class="container-flush">
+        <div class="footer-grid">
+          <!-- Col 1: LV Studio Brand -->
+          <div class="footer-brand-col">
+            <img src="assets/images/logo_lv_white.png" alt="LV Studio" class="footer-logo-img">
+            <span class="footer-tagline">DISEÑO - VISUALIZACIÓN - ESPACIOS</span>
+            <p class="footer-studio-bio">
+              Estudio de arquitectura virtual, modelado 3D de alta precisión y manufactura de mobiliario físico a medida a través de Taller Tommy. Basados en Puebla, México, con alcance nacional e internacional.
+            </p>
+            <div style="margin-top: 1.5rem;">
+              <span class="footer-tommy-subbrand-pill">
+                <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background-color:#71805f;"></span>
+                División Taller Tommy: DISEÑO · FABRICACIÓN · MOBILIARIO
+              </span>
+            </div>
+          </div>
+
+          <!-- Col 2: Enlaces Rápidos -->
+          <div>
+            <h4 class="footer-col-title">Navegación</h4>
+            <ul class="footer-links-list">
+              <li><a href="#hero" class="footer-link">Inicio</a></li>
+              <li><a href="#enfoque" class="footer-link">Nuestro Enfoque</a></li>
+              <li><a href="#proyectos" class="footer-link">Portafolio de Renders</a></li>
+              <li><a href="#taller-tommy" class="footer-link">Taller Tommy (Mobiliario)</a></li>
+              <li><a href="#servicios" class="footer-link">Servicios & Stack BIM</a></li>
+              <li><a href="#cotizador" class="footer-link">Cotizador de Proyecto</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Servicios Especializados -->
+          <div>
+            <h4 class="footer-col-title">Especialidades</h4>
+            <ul class="footer-links-list">
+              <li><a href="#servicios" class="footer-link">Renderizado Fotorrealista 4K</a></li>
+              <li><a href="#servicios" class="footer-link">Modelado BIM en Revit</a></li>
+              <li><a href="#servicios" class="footer-link">Recorridos Virtuales 360°</a></li>
+              <li><a href="#taller-tommy" class="footer-link">Carpintería de Autor CNC</a></li>
+              <li><a href="#servicios" class="footer-link">Visualización para Preventas</a></li>
+              <li><a href="#taller-tommy" class="footer-link">Mobiliario Residencial a Medida</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Canales Directos de Contacto (WhatsApp, IG, Email) -->
+          <div>
+            <h4 class="footer-col-title">Canales Directos</h4>
+            
+            <!-- WhatsApp -->
+            <div class="contact-item-row">
+              <a href="https://wa.me/522228167858" target="_blank" rel="noopener noreferrer" class="contact-icon-box" aria-label="WhatsApp">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.64c.25-.13 1.47-.72 1.7-.8.23-.08.39-.13.56.13.17.25.65.8.79.97.15.17.29.19.54.07.25-.13 1.05-.39 2-.1.74-.23 1.24-.77 1.44-1.12.2-.34.2-.64.14-.77-.06-.13-.23-.2-.48-.33z"/>
+                </svg>
+              </a>
+              <div class="contact-link-text">
+                <span class="contact-sub-label">WhatsApp Directo</span>
+                <a href="https://wa.me/522228167858" target="_blank" rel="noopener noreferrer" class="contact-main-value">
+                  +52 222 816 7858
+                </a>
+                <span style="font-size: 0.7rem; color: rgba(249,240,224,0.4);">22-28-16-78-58</span>
+              </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="contact-item-row">
+              <a href="https://instagram.com/lv_studio_7" target="_blank" rel="noopener noreferrer" class="contact-icon-box" aria-label="Instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <div class="contact-link-text">
+                <span class="contact-sub-label">Instagram Portafolio</span>
+                <a href="https://instagram.com/lv_studio_7" target="_blank" rel="noopener noreferrer" class="contact-main-value">
+                  @lv_studio_7
+                </a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item-row">
+              <a href="mailto:lvstudioarq7@gmail.com" class="contact-icon-box" aria-label="Email">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <div class="contact-link-text">
+                <span class="contact-sub-label">Correo Electrónico</span>
+                <a href="mailto:lvstudioarq7@gmail.com" class="contact-main-value" style="font-size: 0.8rem;">
+                  lvstudioarq7@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Legal & Architectural Credits -->
+    <div class="container-flush footer-bottom">
+      <div>
+        © 2026 <strong>LV STUDIO</strong>. Todos los derechos reservados. Puebla, México.
+      </div>
+      <div style="display: flex; gap: 1.5rem;">
+        <span>DISEÑO - VISUALIZACIÓN - ESPACIOS</span>
+        <span>·</span>
+        <span style="color: #899975;">TALLER TOMMY: FABRICACIÓN & MOBILIARIO</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Project Lightbox / Specification Modal
+       ========================================================================== -->
+  <div class="project-modal" role="dialog" aria-modal="true" aria-label="Detalles técnicos del proyecto">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" type="button" aria-label="Cerrar ventana emergente">×</button>
+      
+      <div class="modal-header">
+        <span class="modal-category-tag">Arquitectura Residencial · Fotorrealismo</span>
+        <h2 class="modal-title">Residencia La Cañada</h2>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-gallery-view">
+          <div class="modal-hero-img-box">
+            <img src="assets/images/hero_cantilever_villa.jpg" alt="Detalle de proyecto" class="modal-hero-img">
+          </div>
+        </div>
+
+        <div class="modal-specs-col">
+          <table class="modal-specs-table">
+            <!-- Populated dynamically by main.js -->
+            <tr>
+              <td>Ubicación</td>
+              <td>Valle de Bravo, México</td>
+            </tr>
+            <tr>
+              <td>Superficie</td>
+              <td>720 m²</td>
+            </tr>
+            <tr>
+              <td>Software & Pipeline</td>
+              <td>3ds Max · Blender · Photoshop</td>
+            </tr>
+            <tr>
+              <td>Resolución Final</td>
+              <td>4K Ultra HD (3840 x 2160 px)</td>
+            </tr>
+            <tr>
+              <td>Año de Ejecución</td>
+              <td>2025</td>
+            </tr>
+          </table>
+
+          <p class="modal-narrative">
+            Proyecto desarrollado íntegramente por el equipo de LV Studio, garantizando precisión geométrica milimétrica, cálculo de iluminación solar físicamente correcta y renderizado en alta definición para comercialización inmobiliaria de alto nivel.
+          </p>
+
+          <div class="modal-footer-cta">
+            <a href="https://wa.me/522228167858" target="_blank" rel="noopener noreferrer" class="btn-primary modal-wa-btn" style="width: 100%;">
+              Cotizar Proyecto Similar por WhatsApp →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Floating WhatsApp Direct Contact Button
+       ========================================================================== -->
+  <aside class="floating-whatsapp" aria-label="Contacto rápido por WhatsApp">
+    <span class="floating-whatsapp-tooltip">¿Tienes un proyecto en mente? Hablemos por WhatsApp</span>
+    <a href="https://wa.me/522228167858?text=Hola%20LV%20Studio%2C%20quisiera%20cotizar%20un%20proyecto." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Enviar mensaje de WhatsApp a LV Studio">
+      <svg viewBox="0 0 24 24">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.64c.25-.13 1.47-.72 1.7-.8.23-.08.39-.13.56.13.17.25.65.8.79.97.15.17.29.19.54.07.25-.13 1.05-.39 2-.1.74-.23 1.24-.77 1.44-1.12.2-.34.2-.64.14-.77-.06-.13-.23-.2-.48-.33z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
